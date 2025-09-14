@@ -38,7 +38,10 @@ const Navbar = () => {
                 <a href='#Projects' className='cursor-pointer hover:text-gray-400'>Projects</a>
                 <a href='#Testimonials' className='cursor-pointer hover:text-gray-400'>Testimonials</a>
             </ul>
-            <button className='hidden md:block bg-white px-8 py-2 rounded-full'>Sign up</button>
+      <div className='hidden md:flex gap-6'>
+        <button className='bg-white px-8 py-2 rounded-full'>Sign up</button>
+        <button className='bg-white px-8 py-2 rounded-full'>Login</button>
+      </div>
             <RiMenu3Fill onClick={()=>setshowMobileMenu(true)}className='text-3xl cursor-pointer' />
         </div>
         <div className={`md:hidden ${showMobileMenu ? 'fixed w-full' : 'h-0 w-0'} right-0 top-0 bottom-0

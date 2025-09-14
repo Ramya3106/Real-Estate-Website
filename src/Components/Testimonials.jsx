@@ -64,6 +64,10 @@ const Testimonials = () => {
            </div>
           ))}
         </div>
+        {/* Add Testimonials button below testimonials */}
+        <div className='flex justify-center mt-8'>
+          <button className='bg-blue-600 text-white px-8 py-3 rounded-full shadow-md hover:bg-blue-700 transition'>Add Testimonials</button>
+        </div>
     </motion.div>
   )
 }

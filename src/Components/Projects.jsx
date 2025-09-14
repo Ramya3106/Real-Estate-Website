@@ -63,7 +63,7 @@ const Projects = () => {
   useEffect(() =>{
     const updateCardsToShow = () => {
       if(window.innerWidth >= 1024){
-        setCardsToShow(porojectsData.length)
+          setCardsToShow(projectsData.length);
       }else{
         setCardsToShow(1)
       };
@@ -87,7 +87,7 @@ const Projects = () => {
     initial={{opacity: 0, x:-200}}
     transition={{duration: 1}}
     whileInView={{opacity: 1, x:0}}
-    Viewport={{once: true}}
+        viewport={{once: true}}
     
     className='container mx-auto py-4 pt-20 px-6 md:px-20 lg:px-32 my-20 w-full
     overflow-hidden' id='Projects'>
@@ -124,6 +124,10 @@ const Projects = () => {
               </div>
             ))}
           </div>
+        </div>
+        {/* Add Project button below projects */}
+        <div className='flex justify-center mt-8'>
+          <button className='bg-blue-600 text-white px-8 py-3 rounded-full shadow-md hover:bg-blue-700 transition'>Add Project</button>
         </div>
     </motion.div>
   )
